@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Activities</title>
+        <title>Food!!</title>
         <meta name="author" content="Pito">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,65 +13,81 @@
     </head>
     <body>
         <div class="structure" style="padding-bottom: 30px;">
-            <b>What are we doing after??</b>
+            <b>What food would you like to eat??</b>
             <div style="margin-top: 20px;">
                 <form id="checkbox-form" action="https://formsubmit.co/ajax/9e678ff496f409937bdc83a9789cb413" method="POST">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="hidden" name="_redirect" value="https://jackydooky.github.io/bemybae/">
                     <input type="hidden" name="_template" value="table">
         
-                    <div class="activities-checkbox-group">
+                    <div class="checkbox-group">
                         <div class="checkbox-item">
                             <div class="image">
-                                <img src="ramen.webp">
+                                <img src="assets/ramen.webp">
                             </div>
                             <label>
-                                <input type="checkbox" name="preferences[]" value="museum"> museum
+                                <input type="checkbox" name="preferences[]" value="japanese"> japanese
                             </label>
                         </div>
                         <div class="checkbox-item">
                             <div class="image">
-                                <img src="ramen.webp">
+                                <img src="assets/vietnamese.jpg">
                             </div>
                             <label>
-                                <input type="checkbox" name="preferences[]" value="aquarium"> aquarium
+                                <input type="checkbox" name="preferences[]" value="vietnamese"> vietnamese
                             </label>
                         </div>
                         <div class="checkbox-item">
                             <div class="image">
-                                <img src="ramen.webp">
+                                <img src="assets/korean.jpg">
                             </div>
                             <label>
-                                <input type="checkbox" name="preferences[]" value="cinema"> cinema
+                                <input type="checkbox" name="preferences[]" value="korean"> korean
                             </label>
                         </div>
                         <div class="checkbox-item">
                             <div class="image">
-                                <img src="ramen.webp">
+                                <img src="assets/fast food.jpg">
                             </div>
                             <label>
-                                <input type="checkbox" name="preferences[]" value="arcade"> arcade
+                                <input type="checkbox" name="preferences[]" value="fast food"> fast food 🦅
                             </label>
                         </div>
                         <div class="checkbox-item">
                             <div class="image">
-                                <img src="ramen.webp">
+                                <img src="assets/pasta.jpg">
                             </div>
                             <label>
-                                <input type="checkbox" name="preferences[]" value="ceramics"> ceramics
+                                <input type="checkbox" name="preferences[]" value="pasta"> pasta
                             </label>
                         </div>
                         <div class="checkbox-item">
                             <div class="image">
-                                <img src="ramen.webp">
+                                <img src="assets/salad.jpg">
                             </div>
                             <label>
-                                <input type="checkbox" name="preferences[]" value="park"> park
+                                <input type="checkbox" name="preferences[]" value="salad"> salad
+                            </label>
+                        </div>
+                        <div class="checkbox-item">
+                            <div class="image">
+                                <img src="assets/pizza.jpg">
+                            </div>
+                            <label>
+                                <input type="checkbox" name="preferences[]" value="pizza"> pizza
+                            </label>
+                        </div>
+                        <div class="checkbox-item">
+                            <div class="image">
+                                <img src="assets/street food.jpg">
+                            </div>
+                            <label>
+                                <input type="checkbox" name="preferences[]" value="streetfood"> streetfood
                             </label>
                         </div>
                     </div>
         
-                    <button id="dessert-button">Last page</button>
+                    <button id="food-button">Continue!!</button>
                 </form>
             </div>
         </div>
@@ -101,7 +117,7 @@
 
                     if (response.ok) {
                         alert("Success!")
-                        window.location.href="lastpage.html";
+                        window.location.href="dessert.html";
                     } else {
                         alert('Failed to submit your preferences. Please try again.');
                     }
